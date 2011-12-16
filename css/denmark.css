@@ -1,0 +1,276 @@
+/* General */
+
+/* main color: #9a0000 */
+/* cdio color: #309495 */
+
+body
+{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  line-height: 12px;
+}
+
+h1
+{
+  color: #6c6c6c;
+  font-size: 27px;
+  font-weight: lighter;
+  line-height: 45px;
+
+  border-bottom: 1px solid #6c6c6c;
+}
+
+h2
+{
+  color: #6c6c6c;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 24px;
+  font-style: italic;
+
+  padding: 0px 0px 5px 0px;
+}
+
+.block h2.title
+{
+  border-bottom: 1px solid #6c6c6c;
+}
+
+h3
+{
+
+}
+
+h4
+{
+
+}
+
+h5
+{
+
+}
+
+h6
+{
+
+}
+
+h1.title,
+h2.title,
+h3.title
+{
+  margin: 0px 0px 5px 0px;
+}
+
+a,
+a:link
+{
+  color: #9a0000;
+}
+
+.dtu-cdio a,
+.dtu-cdio a:link
+{
+  color: #309495;
+}
+
+a:hover
+{
+
+}
+
+a:active,
+a.active
+{
+
+}
+
+#page
+{
+  font-size: 12px;
+  line-height: 130%;
+}
+
+/* Header */
+
+#header-wrapper
+{
+  width: 100%;
+  height: 86px;
+
+  background: url('../images/default/header-red.jpg') center top repeat-x #9a0000;
+}
+
+.dtu-cdio #header-wrapper
+{
+  background: url('../images/default/header-green.jpg') center top repeat-x #309495;
+}
+
+#header
+{
+  width: 960px;
+  height: 86px;
+  margin: 0px auto;
+}
+
+.cdio-logo
+{
+  float: left;
+  width: 113px;
+  height: 76px;
+  margin: 5px 0px 0px 45px;
+
+  background: url('../images/default/cdio-logo.png') center top no-repeat transparent;
+}
+
+#name-and-slogan
+{
+  float: left;
+}
+
+#site-name span
+{
+  float: left;
+  width: 322px;
+  height: 32px;
+  margin: 40px 0px 0px 205px;
+
+  background: url('../images/default/conferences-header.png') center top no-repeat transparent;
+
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+.dtu-cdio #site-name span
+{
+  width: 497px;
+  height: 57px;
+  margin: 17px 0px 0px 35px;
+
+  background: url('../images/default/cdio-header.png') center top no-repeat transparent;
+}
+
+.dtu-logo
+{
+  float: right;
+  width: 43px;
+  height: 63px;
+  margin: 10px 0px 0px 0px;
+
+  background: url('../images/default/dtu-logo.png') center top no-repeat transparent;
+}
+
+#header #site-name a,
+#header #site-name a:visited,
+#header #site-name a:link
+{
+  color: #fff;
+}
+
+/* Navigation */
+
+#navigation-wrapper
+{
+  width: 100%;
+  height: 36px;
+
+  background: url('../images/default/navigation-bg.jpg') center top repeat-x transparent;
+
+  border-top: 1px solid #eee;
+}
+
+#navigation
+{
+  float: none;
+  width: 960px;
+  height: 36px;
+  margin: 0px auto;
+
+}
+
+#navigation ul#main-menu li
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#navigation ul#main-menu li a
+{
+  float: left;
+  height: 16px; /* 36px */
+  padding: 11px 30px 7px 30px;
+
+  color: #333;
+  text-decoration: none;
+}
+
+#navigation ul#main-menu li a:hover
+{
+  /*background: #cecece;*/
+  /*color: #999;*/
+  border-bottom: 3px solid #999;
+}
+
+#navigation ul#main-menu li a.active
+{
+  /*color: #fff;*/
+
+  /*background: #d9d9d9;*/
+
+  border-bottom: 3px solid #666666;
+  /*background: #949494; *//* Old browsers */
+  /*background: -moz-linear-gradient(top,  #949494 0%, #bbbbbb 17%); *//* FF3.6+ */
+  /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#949494), color-stop(17%,#bbbbbb)); *//* Chrome,Safari4+ */
+  /*background: -webkit-linear-gradient(top,  #949494 0%,#bbbbbb 17%); *//* Chrome10+,Safari5.1+ */
+  /*background: -o-linear-gradient(top,  #949494 0%,#bbbbbb 17%); *//* Opera 11.10+ */
+  /*background: -ms-linear-gradient(top,  #949494 0%,#bbbbbb 17%); *//* IE10+ */
+  /*background: linear-gradient(top,  #949494 0%,#bbbbbb 17%); *//* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#bbbbbb',GradientType=0 ); *//* IE6-9 */
+}
+
+
+
+
+
+
+
+
+/* Breadcrumbs */
+
+/* Main */
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second
+{
+  margin-top: 15px;
+}
+
+
+/* Second Sidebar */
+
+/* Footer */
+
+#footer-wrapper
+{
+  width: 100%;
+  min-height: 50px;
+
+  background: rgb(236,236,236); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(236,236,236,1) 0%, rgba(225,225,225,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(236,236,236,1)), color-stop(100%,rgba(225,225,225,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(225,225,225,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(225,225,225,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(225,225,225,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(236,236,236,1) 0%,rgba(225,225,225,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-9 */
+}
+
+#footer
+{
+  width: 960px;
+  margin: 0px auto;
+  padding: 10px 0px;
+}
