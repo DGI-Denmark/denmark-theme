@@ -11,5 +11,5 @@ Instructions
 - git clone https://github.com/discoverygarden/denmark-theme
 - mv denmark-theme denmark
 - enable the module
-- in the theme's settings there is the option to switch between the red DKT color layout or the green CDIO layout.
+- in the theme's settings there is the option to switch between the red DTU color layout or the green CDIO layout.
 
