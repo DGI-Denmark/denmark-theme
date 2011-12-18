@@ -66,7 +66,10 @@ ul.primary li a:focus .tab {
 
 ul.primary li.active a,
 ul.primary li.active a:hover,
-ul.primary li.active a:focus {
+ul.primary li.active a:focus,
+ul.primary li.ui-tabs-selected a,
+ul.primary li.ui-tabs-selected a:hover,
+ul.primary li.ui-tabs-selected a:focus {
   border-width: 0;
   color: #000;
   background-color: transparent;
@@ -75,7 +78,10 @@ ul.primary li.active a:focus {
 
 ul.primary li.active a .tab,
 ul.primary li.active a:hover .tab,
-ul.primary li.active a:focus .tab {
+ul.primary li.active a:focus .tab,
+ul.primary li.ui-tabs-selected a .tab,
+ul.primary li.ui-tabs-selected a:hover .tab,
+ul.primary li.ui-tabs-selected a:focus .tab {
   background: url(../images/tab-right.png) no-repeat right 0;
 }
 
@@ -121,7 +127,10 @@ ul.secondary a:focus {
 
 ul.secondary a.active,
 ul.secondary a.active:hover,
-ul.secondary a.active:focus {
+ul.secondary a.active:focus,
+ul.secondary a.ui-tabs-selected,
+ul.secondary a.ui-tabs-selected:hover,
+ul.secondary a.ui-tabs-selected:focus {
   border: 1px solid #c0c0c0;
   color: #000;
   background: url(../images/tab-secondary.png) repeat-x left top;
