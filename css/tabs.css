@@ -128,9 +128,9 @@ ul.secondary a:focus {
 ul.secondary a.active,
 ul.secondary a.active:hover,
 ul.secondary a.active:focus,
-ul.secondary a.ui-tabs-selected,
-ul.secondary a.ui-tabs-selected:hover,
-ul.secondary a.ui-tabs-selected:focus {
+ul.secondary li.ui-tabs-selected a,
+ul.secondary li.ui-tabs-selected a:hover,
+ul.secondary li.ui-tabs-selected a:focus {
   border: 1px solid #c0c0c0;
   color: #000;
   background: url(../images/tab-secondary.png) repeat-x left top;
