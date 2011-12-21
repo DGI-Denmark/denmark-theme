@@ -233,11 +233,11 @@
 
   </div></div><!-- /#main, /#main-wrapper -->
 
-
+  <div id="sticky-footer-anchor"></div>
 
 </div></div><!-- /#page, /#page-wrapper -->
 
-<div id="footer-wrapper">
+<div id="footer-wrapper" class="clearfix">
 
   <?php if ($footer || $footer_message || $secondary_links): ?>
   <div id="footer"><div class="section">

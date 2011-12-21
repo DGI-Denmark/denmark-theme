@@ -11,7 +11,8 @@ body
   line-height: 12px;
 }
 
-.clearfix::after {
+.clearfix::after
+{
   content: " 0020";
   line-height: 0px;
   height: 0px;
