@@ -25,8 +25,8 @@ h1
   color: #6c6c6c;
   font-size: 27px;
   font-weight: 200;
-  line-height: 45px;
-
+  line-height: 35px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #6c6c6c;
 }
 
