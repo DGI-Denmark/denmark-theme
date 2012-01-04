@@ -467,7 +467,7 @@ h1#site-name
   font-weight:bold;
 }
 
-.block-islandora_solr_search h2.title {
+#block-islandora_solr_search-simple h2.title {
   float:left;
   border:none;
   padding: 0 10px;
