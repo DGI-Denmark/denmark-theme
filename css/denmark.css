@@ -202,6 +202,11 @@ table tr th
   text-decoration: none;
 }
 
+h1#site-name
+{
+  border: 0px;
+}
+
 .dtu-cdio #site-name span
 {
   width: 497px;
@@ -332,4 +337,30 @@ table tr th
   width: 960px;
   margin: 0px auto;
   padding: 10px 0px;
+}
+
+
+/* Blocks */
+
+#block-islandora_solr_search-basic_facets
+{
+  
+}
+
+#block-islandora_solr_search-basic_facets a
+{
+  line-height: 1.5em;
+}
+
+#block-islandora_solr_search-basic_facets a.shown-toggle
+{
+  float: right;
+  margin: 0 0 5px;
+  text-align: right;
+  width: 100%;
+}
+
+#block-islandora_solr_search-basic_facets h3
+{
+  font-size: 1.1em;
 }
