@@ -107,6 +107,11 @@ table tr
   
 }
 
+table tr.first
+{
+  border-top: 1px solid #CCC;
+}
+
 table tr.odd
 {
   background-color: #eee;
