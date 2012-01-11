@@ -476,7 +476,7 @@ h1#site-name
 form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query {
   width: 50%;
 }
-form#islandora-solr-simple-search-form input#edit-submit {
+form#islandora-solr-simple-search-form input.form-submit {
   display: none;
 }
 
