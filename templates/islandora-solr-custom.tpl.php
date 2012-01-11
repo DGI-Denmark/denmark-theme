@@ -207,33 +207,33 @@
       $item = new Fedora_Item($pid);
       $object_html = $objectHelper->getFormattedDatastreams($item,true);
     ?>
-    <tr class="toggle-solr-row <?php print ($count%2 ? 'even' : 'odd' ); print ($count===0 ? ' first' : '') ?>">
-      <td class="solr-cell jquery-toggle"><a class="object-link" href="<?php print $base_url; ?>/fedora/repository/<?php print $pid; ?>/-/<?php print $item->objectProfile->objLabel; ?>">+</a></td>
+    <tr class="<?php print ($count%2 ? 'even' : 'odd' ); print ($count===0 ? ' first' : '') ?>">
+      <td class="solr-cell jquery-toggle toggle-solr-row toggle-plus"><span> </span></td>
       <td class="solr-cell <?php print $result['dc.source']['class']; ?>"><?php if($result['dc.source']['value']) print array_shift($result['dc.source']['value']); ?></td>
       <td class="solr-cell <?php print $result['dc.creator']['class']; ?>">
         <?php if($result['dc.creator']['value']) print array_shift($result['dc.creator']['value']); ?>
       </td>
-      <td class="solr-cell <?php print $result['dc.title']['class']; ?>"><?php if($result['dc.title']['value']) print array_shift($result['dc.title']['value']); ?></td>
+      <td class="solr-cell <?php print $result['dc.title']['class']; ?>"><a href="<?php print $base_url; ?>/fedora/repository/<?php print $pid; ?>/-/<?php print $item->objectProfile->objLabel; ?>"><?php if($result['dc.title']['value']) print array_shift($result['dc.title']['value']); ?></a></td>
       <!-- Call an function which will do a mulgara query, process an XSLT, and return three table cells -->
       <?php print $object_html; ?>
     </tr>
     <tr class="toggleable-solr-row hidden <?php print ($count%2 ? 'even' : 'odd' ); ?>" id="toggleable-solr-row-<?php print ($count+1); ?>">
-      <td class="hidden solr-cell"></td>
-      <td class="hidden solr-cell <?php print $result['dc.source']['class']; ?>">
+      <td class="solr-cell"></td>
+      <td class="solr-cell <?php print $result['dc.source']['class']; ?>">
         <?php if($result['dc.source']['value']): ?>
           <?php foreach($result['dc.source']['value'] as $key => $value): ?>
             <span class="source"><?php print $value; ?></span>
           <?php endforeach; ?>
         <?php endif; ?>
       </td>
-      <td class="hidden solr-cell <?php print $result['dc.creator']['class']; ?>">
+      <td class="solr-cell <?php print $result['dc.creator']['class']; ?>">
         <?php if($result['dc.creator']['value']): ?>
           <?php foreach($result['dc.creator']['value'] as $key => $value): ?>
             <span class="creator"><?php print $value; ?></span>
           <?php endforeach; ?>
         <?php endif; ?>
       </td>
-      <td colspan="4" class="hidden solr-cell <?php print $result['dc.description']['class']; ?>">
+      <td colspan="4" class="solr-cell <?php print $result['dc.description']['class']; ?>">
         <?php if($result['dc.description']['value']): ?>
           <span class="abstract">Abstract:</span>
           <span class="description"><?php print array_shift($result['dc.description']['value']); ?></span>

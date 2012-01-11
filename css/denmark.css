@@ -435,10 +435,10 @@ h1#site-name
 }
 
 .islandora_solr_results td.jquery-toggle {
-  width: 2%;
+  width: 3%;
 }
 .islandora_solr_results td.dc-source {
-  width: 26%;
+  width: 25%;
 }
 .islandora_solr_results td.dc-creator {
   width: 19%;
@@ -480,10 +480,20 @@ form#islandora-solr-simple-search-form input.form-submit {
   display: none;
 }
 
-.toggle-solr-row,
-.toggleable-solr-row
+.toggle-solr-row
 {
   cursor: pointer;
+  color: #9a0000;
+}
+
+td.toggle-plus
+{
+  background: url('../images/expand.png') no-repeat center center;
+}
+
+td.toggle-minus
+{
+  background: url('../images/contract.png') no-repeat center center;
 }
 
 table .toggle-solr-row.even:hover,
