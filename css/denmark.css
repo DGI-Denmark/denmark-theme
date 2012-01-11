@@ -479,3 +479,21 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query 
 form#islandora-solr-simple-search-form input#edit-submit {
   display: none;
 }
+
+.toggle-solr-row,
+.toggleable-solr-row
+{
+  cursor: pointer;
+}
+
+table .toggle-solr-row.even:hover,
+table .toggleable-solr-row.even:hover
+{
+  background-color: #fefefe;
+}
+
+table .toggle-solr-row.odd:hover,
+table .toggleable-solr-row.odd:hover
+{
+  background-color: #f4f4f4;
+}
