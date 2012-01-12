@@ -34,6 +34,12 @@ function denmark_settings($saved_settings) {
       '1' => t('CDIO'),
     ),
   );
+  $form['denmark_logo_link'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Customized Logo Link'),
+    '#default_value' => ($settings['denmark_logo_link'] ? $settings['denmark_logo_link'] : null) ,
+    '#description'   => t("Enter a URL for the logo link, or leave blank to have logo link to this site's <front>"),
+  );
 
   // Add the base theme's settings.
   $form += zen_settings($saved_settings, $defaults);

@@ -125,6 +125,10 @@ function denmark_preprocess_page(&$vars, $hook) {
       $vars['cdio_logo'] = TRUE;
       break;
   }
+  $logo_link = theme_get_setting('denmark_logo_link');
+  if( !empty( $logo_link) ) {
+    $vars['denmark_logo_link'] = $logo_link;
+  }
 
 //  dsm($vars);
 
