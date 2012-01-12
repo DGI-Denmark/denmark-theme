@@ -158,7 +158,7 @@
       </div>
     <?php endif; ?>
 
-    <div class="dtu-logo"></div>
+    <div class="dtu-logo"><a href="http://www.dtu.dk/"><img src="<?php print $base_url . '/'. $directory; ?>/images/default/dtu-logo.png"></a></div>
 
     <?php if ($search_box): ?>
     <div id="search-box"><?php print $search_box; ?></div>
