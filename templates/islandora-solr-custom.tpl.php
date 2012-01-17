@@ -264,10 +264,6 @@
     </tbody>
   </table>
 
-<pre>
-  <?php //print_r($results); ?>
-</pre>
-
   <?php //print $table_rendered; ?>
 
 <?php endif;
