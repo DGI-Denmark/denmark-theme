@@ -235,8 +235,26 @@
       </td>
       <td colspan="4" class="solr-cell <?php print $result['dc.description']['class']; ?>">
         <?php if($result['dc.description']['value']): ?>
-          <span class="abstract">Abstract:</span>
-          <span class="description"><?php print array_shift($result['dc.description']['value']); ?></span>
+          <?php
+            $abstract = trim(array_shift($result['dc.description']['value']));
+            if(!empty($abstract)): ?>
+            <div class="solr-abstract-wrapper">
+              <span class="abstract">Abstract:</span>
+              <span class="description"><?php print $abstract; ?></span>
+            </div>
+          <?php endif; ?>
+        <?php endif; ?>
+        <?php if($result['dtu.track.facet']['value'] || $result['dtu.session.facet']['value']): ?>
+          <div class="solr-track-session-wrapper">
+            <?php if($result['dtu.track.facet']['value']): ?>
+              <span class="abstract">Track: </span>
+              <span class="track"><?php print array_shift($result['dtu.track.facet']['value']); ?></span>
+            <?php endif;?>
+            <?php if($result['dtu.session.facet']['value']): ?>
+              <span class="abstract">Session: </span>
+              <span class="session"><?php print array_shift($result['dtu.session.facet']['value']); ?></span>
+            <?php endif;?>
+          </div>
         <?php endif; ?>
       </td>
     </tr>

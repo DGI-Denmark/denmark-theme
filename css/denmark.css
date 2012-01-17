@@ -464,7 +464,20 @@ h1#site-name
  display:block;
 }
 
-.islandora_solr_results span.abstract {
+.islandora_solr_results td.dc-description div
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.islandora_solr_results div.solr-track-session-wrapper span.track,
+.islandora_solr_results div.solr-track-session-wrapper span.session
+{
+  padding-left: 1px;
+  padding-right: 2px;
+}
+
+.islandora_solr_results div.solr-track-session-wrapper span.abstract {
   font-weight:bold;
 }
 
