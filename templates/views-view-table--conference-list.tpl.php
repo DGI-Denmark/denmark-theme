@@ -31,7 +31,7 @@
       <tr class="<?php print implode(' ', $row_classes[$count]); ?>">
         <td class="views-field views-conference-list-date-widget">
           <div class="date">
-            <span class="month"><?php print $row['field_month_value']; ?></span>
+            <span class="month"><?php print ( $row['field_month_value'] ? date('M',strtotime($row['field_month_value'])) : "???" ); ?></span>
             <span class="day"><?php print $row['field_day_value']; ?></span>
           </div>
         </td>
