@@ -370,6 +370,11 @@ h1#site-name
   font-size: 1.1em;
 }
 
+#block-islandora_solr_search-basic_facets .islandora_solr_search_facet
+{
+  clear:both;
+}
+
 .view-conference-list .views-exposed-form label {
   float:left;
   padding: 4px 5px;
