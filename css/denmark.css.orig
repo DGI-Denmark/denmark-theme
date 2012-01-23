@@ -5,7 +5,8 @@
 
 body
 {
-  font-family: Verdana, Arial, Sans-Serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
   color: #333;
   line-height: 12px;
 }
@@ -145,7 +146,7 @@ table tr th
   width: 100%;
   height: 86px;
 
-  /* background: url('../images/default/header-red.jpg') center top repeat-x #9a0000; */
+  background: url('../images/default/header-red.jpg') center top repeat-x #9a0000;
 }
 
 .dtu-cdio #header-wrapper
@@ -173,8 +174,6 @@ table tr th
 #name-and-slogan
 {
   float: left;
-
-  vertical-align: middle;
 }
 
 /*#site-name span*/
@@ -195,9 +194,9 @@ table tr th
   float: left;
   /*width: 322px;*/
   height: 32px;
-  margin: 20px 0px 0px 205px;
+  margin: 40px 0px 0px 205px;
 
-  color: #990000;
+  color: #fff;
   font-size: 37px;
   font-weight: 200;
   line-height: 45px;
