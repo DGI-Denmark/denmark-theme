@@ -462,7 +462,36 @@ h1#site-name
   width: 5%;
 }
 .islandora_solr_results td.dc-description {
-  width: 55%;
+  width: 53%;
+}
+
+.dtu-cdio .islandora_solr_results th.dc-source {
+  display:none;
+}
+.dtu-cdio .islandora_solr_results td.jquery-toggle {
+  width: 4%;
+}
+.dtu-cdio .islandora_solr_results td.dc-source {
+  width: 0;
+  display:none;
+}
+.dtu-cdio .islandora_solr_results td.dc-creator {
+  width: 29%;
+}
+.dtu-cdio .islandora_solr_results td.dc-title {
+  width: 49%;
+}
+.dtu-cdio .islandora_solr_results td.dtu-video {
+  width: 6%;
+}
+.dtu-cdio .islandora_solr_results td.dtu-slides {
+  width: 6%;
+}
+.dtu-cdio .islandora_solr_results td.dtu-paper {
+  width: 6%;
+}
+.dtu-cdio .islandora_solr_results td.dc-description {
+  width: 67%;
 }
 
 .islandora_solr_results td.dc-creator span.creator {

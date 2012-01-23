@@ -183,7 +183,7 @@
     <thead>
       <tr>
         <th><!-- jquery open --></th>
-        <th>Conference</th>
+        <th class="conference dc-source">Conference</th>
         <th>Author</th>
         <th>Title</th>
         <th>Video</th>
@@ -209,7 +209,7 @@
     ?>
     <tr class="<?php print ($count%2 ? 'even' : 'odd' ); print ($count===0 ? ' first' : '') ?>">
       <td class="solr-cell jquery-toggle toggle-solr-row toggle-plus"><span> </span></td>
-      <td class="solr-cell <?php print $result['dc.source']['class']; ?>"><?php if($result['dc.source']['value']) print array_shift($result['dc.source']['value']); ?></td>
+      <td class="solr-cell conference <?php print $result['dc.source']['class']; ?>"><?php if($result['dc.source']['value']) print array_shift($result['dc.source']['value']); ?></td>
       <td class="solr-cell <?php print $result['dc.creator']['class']; ?>">
         <?php if($result['dc.creator']['value']) print array_shift($result['dc.creator']['value']); ?>
       </td>
