@@ -140,6 +140,16 @@ table tr th
 
 /* Header */
 
+#logo
+{
+  margin: 7px 0px 0px 0px;
+}
+
+.dtu-cdio #logo
+{
+  margin: 0px 0px 0px 0px;
+}
+
 #header-wrapper
 {
   width: 100%;
@@ -195,7 +205,7 @@ table tr th
   float: left;
   /*width: 322px;*/
   height: 32px;
-  margin: 20px 0px 0px 205px;
+  margin: 35px 0px 0px 205px;
 
   color: #990000;
   font-size: 37px;
@@ -220,12 +230,15 @@ h1#site-name
   margin: 17px 0px 0px 35px;
 
   background: url('../images/default/cdio-header.png') center top no-repeat transparent;
+  
+  text-indent: -999em;
+  width: 497px;
 }
 
 .dtu-logo
 {
   float: right;
-  width: 43px;
+  width: 54px;
   height: 63px;
   margin: 10px 0px 0px 0px;
 
@@ -246,8 +259,18 @@ h1#site-name
   width: 100%;
   height: 36px;
 
+  margin: 15px 0px 0px 0px;
+  
+/*  background: url('../images/default/navigation-bg.jpg') center top repeat-x transparent;*/
+/*  border-top: 1px solid #eee;*/
+}
+
+.dtu-cdio #navigation-wrapper
+{
   background: url('../images/default/navigation-bg.jpg') center top repeat-x transparent;
 
+  margin: 0px 0px 0px 0px;
+  
   border-top: 1px solid #eee;
 }
 
@@ -258,6 +281,22 @@ h1#site-name
   height: 36px;
   margin: 0px auto;
 
+}
+
+#navigation ul#main-menu
+{
+  height: 36px;
+/*  padding: 1px 0px 0px 0px;*/
+  background-color: #990000;
+  border: 1px solid #990000;
+}
+
+.dtu-cdio #navigation ul#main-menu
+{
+  height: auto;
+/*  padding: 1px 0px 0px 0px;*/
+  background-color: transparent;
+  border: 0px;
 }
 
 #navigation ul#main-menu li
@@ -272,16 +311,51 @@ h1#site-name
   height: 16px; /* 36px */
   padding: 11px 30px 7px 30px;
 
-  color: #333;
+/*  border-left: 1px solid #990000;*/
+/*  border-right: 1px solid #990000;*/
+  
+  color: #fff;
   text-decoration: none;
+}
+
+.dtu-cdio #navigation ul#main-menu li a
+{
+  color: #666;
 }
 
 #navigation ul#main-menu li a:hover
 {
-  /*background: #cecece;*/
-  /*color: #999;*/
-  border-bottom: 3px solid #999;
+/*  text-decoration: underline;*/
+/*  background-color: #A51D1D;*/
+  background-color: #B02C2C;
 }
+
+.dtu-cdio #navigation ul#main-menu li a:hover
+{
+  border-bottom: 3px solid #999;
+  background-color: transparent;
+}
+
+#navigation ul#main-menu li a.active
+{
+  background: #fff;
+  color: #990000;
+/*  border-bottom: 3px solid #999;*/
+}
+
+.dtu-cdio #navigation ul#main-menu li a.active
+{
+  border-bottom: 3px solid #666666;
+  background-color: transparent;
+  color: #666;
+}
+
+
+#navigation ul#main-menu li a.active:hover
+{
+  text-decoration: none;
+}
+
 
 #navigation ul#main-menu li a.active
 {
@@ -289,7 +363,7 @@ h1#site-name
 
   /*background: #d9d9d9;*/
 
-  border-bottom: 3px solid #666666;
+/*  border-bottom: 3px solid #666666;*/
   /*background: #949494; *//* Old browsers */
   /*background: -moz-linear-gradient(top,  #949494 0%, #bbbbbb 17%); *//* FF3.6+ */
   /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#949494), color-stop(17%,#bbbbbb)); *//* Chrome,Safari4+ */
@@ -555,3 +629,6 @@ table .toggleable-solr-row.odd:hover
 {
   background-color: #f4f4f4;
 }
+
+
+
