@@ -632,3 +632,10 @@ table .toggleable-solr-row.odd:hover
 
 
 
+/* block tweak to prevent overlay links colliding with the "Show less" links */
+
+div.block.with-block-editing
+{
+  float: left;
+  width: 100%;
+}
